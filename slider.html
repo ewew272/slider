@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1 class="main__header">Completed projects</h1>
+        <p class="main__description">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
+        market we have made happy more than 1000 families</p>
+        <div class="characteristic">
+            <div class="characteristic__city">
+                <h2 class="city__header">City:</h2>
+                <p class="city__description" id="city">Rostov-on-Don LCD admiral</p>
+            </div>
+            <div class="characteristic__area">
+                <h2 class="area__header">apartment area:</h2>
+                <p class="area__description" id="area">81 m2</p>
+            </div>
+            <div class="characteristic__time">
+                <h2 class="time__header">Repair time:</h2>
+                <p class="time__description" id="time">3.5 months</p>
+            </div>
+            <div class="characteristic__coast">
+                <h2 class="coast__header">Repair Cost:</h2>
+                <p class="coast__description" id="coast">Upon request</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="arrow arrow-left" id="arrow-left">
+                    <img src="https://i.imgur.com/G0F6mlj.png" alt="arrow left">
+            </button>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="arrow arrow-right"  id="arrow-right">
+                <img src="https://i.imgur.com/QQ8yKFo.png" alt="arrow right">
+            </button>
+        </div>
+    </main>
+    <div class="media">
+        <div class="media__head">
+            <h2 class="head__city active">Rostov-on-Don Admiral</h2>
+            <h2 class="head__city">Sochi Thieves</h2>
+            <h2 class="head__city">Rostov-on-Don Patriotic</h2>
+        </div>
+        <img class="media__img" id="slide-img" src="https://i.imgur.com/tI9xgZD.png" alt="Rostov-on-Don Admiral">
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>

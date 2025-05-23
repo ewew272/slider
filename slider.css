@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(19, 19, 19, 1);
+    font-family: "Yeseva One", serif;
+    width: 1171px;
+    height: 553px;
+    margin: 0 auto;
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+    height: 100vh;
+    gap: 45px;
+}
+main {
+    max-width: 442px;
+    max-height: 552px;
+    height: 100%;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.main__header {
+    color: rgba(227, 184, 115, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: 300px;
+}
+.main__description {
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+}
+.characteristic {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.characteristic h2 {
+    color: rgba(227, 184, 115, 1);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.characteristic p {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    max-width: 100px;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    right: 60px;
+    margin-top: 100px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.arrow img {
+    height: 13px;
+    width: 42px;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.head__city {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.media__head {
+    display: flex;
+    width: 623px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.head__city.active {
+    color: rgba(227, 184, 115, 1);
+    border-bottom: 2px solid rgba(227, 184, 115, 1);
+    padding-bottom: 5px; 
+}
+
+.media__img {
+    width: 679px;
+    height: 482px;
+}
