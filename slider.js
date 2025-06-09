@@ -8,7 +8,7 @@ const titles = document.querySelectorAll(".head__city");
 
 const slides = [
   {
-    img: "https://i.imgur.com/tI9xgZD.png",
+    img: "images/rostovadmiral.png",
     city: "Rostov-on-Don LCD admiral",
     area: "81 m2",
     time: "3.5 months",
@@ -16,7 +16,7 @@ const slides = [
     title: "Rostov-on-Don Admiral"
   },
   {
-    img: "https://i.imgur.com/CEqRDsc.png",
+    img: "images/sochi.png",
     city: "Sochi Thieves",
     area: "105 m2",
     time: "4 months",
@@ -24,7 +24,7 @@ const slides = [
     title: "Sochi Thieves"
   },
   {
-    img: "https://i.imgur.com/oNq51Ec.png",
+    img: "images/rostovpatr.png",
     city: "Rostov-on-Don Patriotic",
     area: "93 m2",
     time: "4.5 months",
@@ -78,17 +78,3 @@ titles.forEach((title, index) => {
         newSlide(count);
     });
 });
-
-document.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowLeft") {
-        count = (count - 1 + slides.length) % slides.length;
-        newSlide(count);
-    }
-});
-
-document.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowRight") {
-        count = (count + 1) % slides.length;
-        newSlide(count)
-    }
-})
